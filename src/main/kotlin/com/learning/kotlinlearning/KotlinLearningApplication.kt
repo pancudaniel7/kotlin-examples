@@ -13,9 +13,9 @@ fun main(args: Array<String>) {
 }
 
 @RestController
-class TestRemoteDebugController {
+class PingController {
 
-	@GetMapping("/test")
+	@GetMapping("/ping")
 	fun ping(): String {
 		return "ping!"
 	}
