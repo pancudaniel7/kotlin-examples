@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.learning.kotlin-learning' is invalid and this project uses 'com.learning.kotlinlearning' instead.
+* The original package name 'com.learning.kotlin-examples' is invalid and this project uses 'com.learning.kotlinlearning' instead.
 
 # Getting Started
 

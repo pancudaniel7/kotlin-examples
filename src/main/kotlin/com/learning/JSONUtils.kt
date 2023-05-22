@@ -1,0 +1,40 @@
+package com.learning
+
+import org.json.JSONArray
+
+
+fun main(args: Array<String>) {
+    val jsonArrayString = "[ {   \"id\" : \"TimeBasedCraftRecipe\",   \"ext\" : {     \"incompleteCraft\" : { }   } }, {   \"id\" : \"Basic Ammo Crafting\",   \"stackableCostByCatalogId\" : { },   \"ext\" : {     \"recipe\" : {       \"craftingTimeMinutes\" : 0,       \"input\" : {         \"stackable\" : [ {           \"catalogId\" : \"Material 1\",           \"amount\" : 5         }, {           \"catalogId\" : \"Material 2\",           \"amount\" : 5         } ],         \"instanced\" : [ ]       },       \"output\" : {         \"stackable\" : [ {           \"catalogId\" : \"Basic Ammo pack\",           \"amount\" : 1         } ],         \"instanced\" : [ ]       },       \"isAvailableRequirements\" : [ ],       \"canCraftRequirements\" : [ ]     }   } }, {   \"id\" : \"Crafting Terminal upgrade\",   \"stackableCostByCatalogId\" : { },   \"ext\" : {     \"recipe\" : {       \"craftingTimeMinutes\" : 0,       \"input\" : {         \"stackable\" : [ {           \"catalogId\" : \"Material 2\",           \"amount\" : 1         }, {           \"catalogId\" : \"Material 3\",           \"amount\" : 1         }, {           \"catalogId\" : \"Craft Terminal T1\",           \"amount\" : 1         } ],         \"instanced\" : [ ]       },       \"output\" : {         \"stackable\" : [ {           \"catalogId\" : \"Craft Terminal T2\",           \"amount\" : 1         } ],         \"instanced\" : [ ]       },       \"isAvailableRequirements\" : [ ],       \"canCraftRequirements\" : [ ]     }   } }, {   \"id\" : \"Marksman Rifle 1\",   \"stackableCostByCatalogId\" : { },   \"ext\" : {     \"recipe\" : {       \"craftingTimeMinutes\" : 0,       \"input\" : {         \"stackable\" : [ {           \"catalogId\" : \"Material 1\",           \"amount\" : 3         } ],         \"instanced\" : [ ]       },       \"output\" : {         \"stackable\" : [ ],         \"instanced\" : [ {           \"catalogId\" : \"ItemID.Weapon.Marksman1\",           \"amount\" : 1         } ]       },       \"isAvailableRequirements\" : [ {         \"doesntHaveItem\" : {           \"itemCatalogId\" : \"ItemID.Weapon.Marksman1\"         }       } ],       \"canCraftRequirements\" : [ {         \"hasItem\" : {           \"itemCatalogId\" : \"ItemID.Schematic.MarksmanRifle1\"         }       } ]     }   } }, {   \"id\" : \"Marksman Rifle 2\",   \"stackableCostByCatalogId\" : { },   \"ext\" : {     \"recipe\" : {       \"craftingTimeMinutes\" : 0,       \"input\" : {         \"stackable\" : [ {           \"catalogId\" : \"Material 1\",           \"amount\" : 4         } ],         \"instanced\" : [ ]       },       \"output\" : {         \"stackable\" : [ ],         \"instanced\" : [ {           \"catalogId\" : \"ItemID.Weapon.Marksman2\",           \"amount\" : 1         } ]       },       \"isAvailableRequirements\" : [ {         \"doesntHaveItem\" : {           \"itemCatalogId\" : \"ItemID.Weapon.Marksman2\"         }       } ],       \"canCraftRequirements\" : [ {         \"hasItem\" : {           \"itemCatalogId\" : \"ItemID.Schematic.MarksmanRifle2\"         }       } ]     }   } }, {   \"id\" : \"Marksman Rifle 3\",   \"stackableCostByCatalogId\" : { },   \"ext\" : {     \"recipe\" : {       \"craftingTimeMinutes\" : 0,       \"input\" : {         \"stackable\" : [ {           \"catalogId\" : \"Material 1\",           \"amount\" : 5         } ],         \"instanced\" : [ ]       },       \"output\" : {         \"stackable\" : [ ],         \"instanced\" : [ {           \"catalogId\" : \"ItemID.Weapon.Marksman3\",           \"amount\" : 1         } ]       },       \"isAvailableRequirements\" : [ {         \"doesntHaveItem\" : {           \"itemCatalogId\" : \"ItemID.Weapon.Marksman3\"         }       } ],       \"canCraftRequirements\" : [ {         \"hasItem\" : {           \"itemCatalogId\" : \"ItemID.Schematic.MarksmanRifle3\"         }       } ]     }   } }, {   \"id\" : \"Light Machine Gun Variation 1\",   \"stackableCostByCatalogId\" : { },   \"ext\" : {     \"recipe\" : {       \"craftingTimeMinutes\" : 0,       \"input\" : {         \"stackable\" : [ {           \"catalogId\" : \"Material 1\",           \"amount\" : 8         } ],         \"instanced\" : [ ]       },       \"output\" : {         \"stackable\" : [ ],         \"instanced\" : [ {           \"catalogId\" : \"ItemID.Weapon.LMG1\",           \"amount\" : 1         } ]       },       \"isAvailableRequirements\" : [ {         \"doesntHaveItem\" : {           \"itemCatalogId\" : \"ItemID.Weapon.LMG1\"         }       } ],       \"canCraftRequirements\" : [ {         \"hasItem\" : {           \"itemCatalogId\" : \"ItemID.Schematic.LMG1\"         }       } ]     }   } }, {   \"id\" : \"Light Machine Gun Variation 2\",   \"stackableCostByCatalogId\" : { },   \"ext\" : {     \"recipe\" : {       \"craftingTimeMinutes\" : 0,       \"input\" : {         \"stackable\" : [ {           \"catalogId\" : \"Material 1\",           \"amount\" : 6         } ],         \"instanced\" : [ ]       },       \"output\" : {         \"stackable\" : [ ],         \"instanced\" : [ {           \"catalogId\" : \"ItemID.Weapon.LMG2\",           \"amount\" : 1         } ]       },       \"isAvailableRequirements\" : [ {         \"doesntHaveItem\" : {           \"itemCatalogId\" : \"ItemID.Weapon.LMG2\"         }       } ],       \"canCraftRequirements\" : [ {         \"hasItem\" : {           \"itemCatalogId\" : \"ItemID.Schematic.LMG2\"         }       } ]     }   } }, {   \"id\" : \"Grenade Launcher Variation 1\",   \"stackableCostByCatalogId\" : { },   \"ext\" : {     \"recipe\" : {       \"craftingTimeMinutes\" : 0,       \"input\" : {         \"stackable\" : [ {           \"catalogId\" : \"Material 1\",           \"amount\" : 5         } ],         \"instanced\" : [ ]       },       \"output\" : {         \"stackable\" : [ ],         \"instanced\" : [ {           \"catalogId\" : \"ItemID.Weapon.Launcher1\",           \"amount\" : 1         } ]       },       \"isAvailableRequirements\" : [ {         \"doesntHaveItem\" : {           \"itemCatalogId\" : \"ItemID.Weapon.Launcher1\"         }       } ],       \"canCraftRequirements\" : [ {         \"hasItem\" : {           \"itemCatalogId\" : \"ItemID.Schematic.Launcher1\"         }       } ]     }   } }, {   \"id\" : \"Grenade Launcher Variation 2\",   \"stackableCostByCatalogId\" : { },   \"ext\" : {     \"recipe\" : {       \"craftingTimeMinutes\" : 0,       \"input\" : {         \"stackable\" : [ {           \"catalogId\" : \"Material 1\",           \"amount\" : 6         } ],         \"instanced\" : [ ]       },       \"output\" : {         \"stackable\" : [ ],         \"instanced\" : [ {           \"catalogId\" : \"ItemID.Weapon.Launcher2\",           \"amount\" : 1         } ]       },       \"isAvailableRequirements\" : [ {         \"doesntHaveItem\" : {           \"itemCatalogId\" : \"ItemID.Schematic.Launcher2\"         }       } ],       \"canCraftRequirements\" : [ {         \"hasItem\" : {           \"itemCatalogId\" : \"ItemID.Schematic.Launcher2\"         }       } ]     }   } } ]"
+
+    val list = convertJsonArrayStringToList(jsonArrayString)
+    println(list)
+
+    val jsonString = convertListToJsonString(list)
+    println(jsonString)
+}
+
+fun convertListToJsonString(list: List<Any>): String {
+    val jsonArray = JSONArray(list)
+    return jsonArray.toString()
+}
+
+private fun convertJsonArrayStringToList(jsonArrayString: String): List<Map<String, Any>> {
+    val jsonArray = JSONArray(jsonArrayString)
+    val list = mutableListOf<Map<String, Any>>()
+
+    for (i in 0 until jsonArray.length()) {
+        val jsonObject = jsonArray.getJSONObject(i)
+        val map = jsonObject.toMap()
+        list.add(map)
+    }
+
+    return list
+}
+
+fun convertListToMap(list: List<Map<String, Any>>): Map<String, Any> {
+    val map = mutableMapOf<String, Any>()
+    for (item in list) {
+        map.putAll(item)
+    }
+    return map
+}
