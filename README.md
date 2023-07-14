@@ -1,4 +1,4 @@
-# Kotlin Learning
+# Kotlin Examples
 
 ### Prerequisites:
 - JDK 11
